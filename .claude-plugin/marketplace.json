@@ -10,8 +10,8 @@
     {
       "name": "outcome-first",
       "source": "./",
-      "description": "Interview first, build second: Claude asks a few quick questions, writes a short result page, waits for your OK, then builds.",
-      "version": "1.0.0"
+      "description": "Interview first, build second: Claude asks a few quick questions, writes a reusable result prompt, waits for your OK, builds, then checks the result.",
+      "version": "1.1.0"
     }
   ]
 }

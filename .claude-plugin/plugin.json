@@ -1,9 +1,17 @@
 {
   "name": "outcome-first",
-  "version": "1.0.0",
-  "description": "Interview first, build second: Claude asks a few quick questions, writes a short result page, waits for your OK, then builds.",
-  "author": { "name": "OmerLaProjects" },
+  "version": "1.1.0",
+  "description": "Interview first, build second: Claude asks a few quick questions, writes a reusable result prompt, waits for your OK, builds, then checks the result.",
+  "author": {
+    "name": "OmerLaProjects"
+  },
   "repository": "https://github.com/OmerLaProjects/outcome-first",
   "license": "MIT",
-  "keywords": ["prompting", "interview", "spec", "outcome", "hebrew"]
+  "keywords": [
+    "prompting",
+    "interview",
+    "spec",
+    "outcome",
+    "hebrew"
+  ]
 }

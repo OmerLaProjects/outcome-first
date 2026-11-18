@@ -1,6 +1,6 @@
 # outcome-first
 
-**קודם שואלים, אחר כך בונים.** סקיל ל-Claude שמראיין אתכם בכמה שאלות קצרות, כותב "דף תוצאה", מחכה לאישור, ורק אז בונה.
+**קודם שואלים, אחר כך בונים.** סקיל ל-Claude שמראיין אתכם בכמה שאלות קצרות, כותב בשבילכם "פרומפט תוצאה", מחכה לאישור, בונה, ובסוף בודק שהתוצאה עומדת במה שסיכמתם.
 
 > "Describe the outcome, not the steps." (Anthropic, Claude Code docs)
 
@@ -17,9 +17,9 @@
 תוצאה: מצגת לבוס על הרבעון האחרון
 ```
 
-Claude ישאל כמה שאלות (בדרך כלל 3–5), יכתוב דף תוצאה:
-**בשביל מי · מה צריך לקרות בסוף · מה חייב להיות בפנים · איך נראה "מוכן" · מה עוד חסר**,
-ויחכה ל"מאשר" לפני שהוא בונה.
+Claude ישאל עד 5 שאלות קצרות, כל פעם אחת, עם תשובות מוצעות לבחירה. אחר כך יכתוב "פרומפט תוצאה":
+**בשביל מי · מה צריך לקרות בסוף · מה חייב להיות בפנים · איך נראה "מוכן" · איך נבדוק שזה טוב · מה לא עושים · הנחות לאישור**.
+את הפרומפט אפשר לאשר, לתקן, או להעתיק ולהשתמש בו בכל צ'אט אחר. אחרי האישור Claude בונה, ובסוף בודק את התוצאה מול הפרומפט.
 
 ## התקנה
 
@@ -39,9 +39,10 @@ Claude ישאל כמה שאלות (בדרך כלל 3–5), יכתוב דף תו�
 
 ## English
 
-**Interview first, build second.** A Claude skill that asks you a few quick questions (one at a time, highest
-impact first), writes a short result page (for whom, what must happen, must include, what "done" looks like,
-what's missing), waits for your OK, then builds.
+**Interview first, build second.** A Claude skill that asks you up to five quick questions (one at a time,
+highest impact first, with suggested answers), writes a reusable result prompt (for whom, goal, must include,
+what "done" looks like, how we check it, what to avoid, assumptions), waits for your OK, builds, then checks the
+result against the prompt.
 
 - **claude.ai:** download `outcome-first.zip` from Releases → Customize → Skills → Upload.
 - **Claude Code:** `/plugin marketplace add OmerLaProjects/outcome-first` then `/plugin install outcome-first@outcome-first`.
