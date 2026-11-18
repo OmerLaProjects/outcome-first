@@ -1,0 +1,17 @@
+{
+  "name": "outcome-first",
+  "owner": {
+    "name": "OmerLaProjects"
+  },
+  "metadata": {
+    "description": "outcome-first: Claude interviews you before it builds (Hebrew + English)."
+  },
+  "plugins": [
+    {
+      "name": "outcome-first",
+      "source": "./",
+      "description": "Interview first, build second: Claude asks a few quick questions, writes a short result page, waits for your OK, then builds.",
+      "version": "1.0.0"
+    }
+  ]
+}
